@@ -11,6 +11,27 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
+
+
+        <li>
+          <% if current_user %>
+          <% link_to "Logout", "/logout" %>
+          <li>
+            <a href = "/logout"> Logout </a>
+          </li>
+          <% else %>
+          <% link_to "Login", "/login" %>
+          <li>
+            <a href = "/login"> Login </a>
+          </li>
+          <% link_to "Registration", "/registration" %>
+          <li>
+            <a href = "/registration"> sign-up </a>
+          </li>
+          <% end %>
+        </li>
+
+
         <li>
           <%= link_to 'Home', :root %>
         </li>
