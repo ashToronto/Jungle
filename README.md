@@ -1,6 +1,6 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+![""](https://github.com/ashToronto/Jungle/blob/master/docs/Screen%20Shot%202018-06-22%20at%209.23.40%20PM.png?raw=true) 
 
 
 ## Setup
