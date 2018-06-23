@@ -1,7 +1,7 @@
 # Jungle
 
 ![""](https://github.com/ashToronto/Jungle/blob/master/docs/Screen%20Shot%202018-06-22%20at%209.23.40%20PM.png?raw=true) 
-
+![""](https://github.com/ashToronto/Jungle/blob/master/docs/Screen%20Shot%202018-06-22%20at%209.26.21%20PM.png?raw=true)
 
 ## Setup
 
