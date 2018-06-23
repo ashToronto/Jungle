@@ -26,6 +26,45 @@
       </div>
     </div>
 
+    <% if current_user == nil %>
+    <div class="alert alert-danger">">
+      <strong>You must be logged in to write a review</strong>
+    </div>
+    <% else %>
+    <div class="p-3 mb-2 bg-info text-white">
+    <div style = 'padding: 10px' "text-success">
+      <%= form_for [@product, Review.new] do |form| %>
+      <%= form.label :Review %><br>
+      <%= form.number_field :rating %><br>
+      <%= form.text_area :description, size:'30x4', class: 'form-control animated'  %>
+      <%= form.submit 'Send' %>
+    </div>
+      <% end %>
+    </div>
+    <% end %>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Rating</th>
+            <th>Reviews</th>
+            <th>Username</th>
+        </tr>
+    </thead>
+    <% @product.reviews.reverse_each do |f| %>
+    <tbody>
+        <tr>
+            <td><%= f.rating %></td>
+            <td><%= f.description %></td>
+            <td><%= f.user_id %></td>
+        </tr>
+    </tbody>
+    <% end %>
+</table>
+
+
+
+
   </article>
 
 </section>
